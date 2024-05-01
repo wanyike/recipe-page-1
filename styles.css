@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@601&family=Roboto:wght@600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@601&family=Roboto&family=Young+Serif&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+:root {
+    --Primary-Nutmeg: hsl(14, 45%, 36%);
+    --primary-DarkRaspberry: hsl(332, 51%, 32%);
+    --Neutral-White: hsl(0, 0%, 100%);
+    --Neutral-RoseWhite: hsl(330, 100%, 98%);
+    --Neutral-Eggshell: hsl(30, 54%, 90%);
+    --Neutral-LightGrey: hsl(30, 18%, 87%);
+    --Neutral-Brown: hsl(30, 10%, 34%);
+    --Neutral-DarkCharcoal: hsl(24, 5%, 18%);
+    --Heading: "Young Serif", serif;
+    --Heading-Weight: 400;
+    --content-Weight-1: 400;
+    --content-Weight-2: 700;
+    --content-font-size: 16px;
+}
+
+* {
+    font-family: var(--content);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--Neutral-Eggshell);
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    color: #000;
+}
+
+#preparation {
+    color: var(--Primary-Nutmeg);
+}
+
+#sub-title {
+    font-size: var(--Content-font-size);
+    color: var(--Primary-Nutmeg);
+    font-family: var(--Heading);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    max-width: 520px;
+    max-height: 1440px;
+    padding: 30px;
+    margin: auto;
+    background: var(--Neutral-White);
+    font-weight: var(--content-Weight-1);
+    font-size: var(--Content-font-size);
+    color: var(--Neutral-Brown);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 270px;
+    background-attachment: fixed;
+    
+}
+
+#content {
+    color: var(--Neutral-Brown);
+    font-size: var(--content-font-size);
+}
+
+
+.list1 {
+    background: var(--Neutral-RoseWhite);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.list1 li::marker {
+    list-style-type: circle;
+    color: var(--primary-DarkRaspberry);
+}
+
+li {
+    padding: 5px 0;
+}
+
+.list2 li::marker {
+    list-style-type: circle;
+    color: var(--Primary-Nutmeg);
+}
+
+hr {
+    border-color: var(--Neutral-LightGrey);
+    width: 100%;
+}
+
+ul, ol {
+    padding: 0px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 375px;
+}
+
+tr {
+    border-bottom: 1px solid var(--Neutral-LightGrey);
+    border-width: 75%;
+}
+
+td {
+    padding: 10px 30px;
+}
+
+
+
+@media screen and(max-width: 375px) {
+    .card {
+        max-width: 375px;
+        height: fit-content;
+        padding: unset;
+        margin: unset;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
